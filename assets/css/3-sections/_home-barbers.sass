@@ -1,0 +1,112 @@
+section.barbers
+	z-index: -3
+	background: #FAEBD7
+		image: url(../img/lista-e-cmimeve.jpg)
+		size: 30%
+	border-bottom: 2px dashed black
+	border-top: 2px dashed black
+
+	.flex.circles-3
+		z-index: -2
+
+		@media (max-width: 968px)
+			margin: 0	
+
+		.bajron-pic
+			background:
+				image: url(../img/bajron-mug.jpg)
+				size: 160%
+				repeat: no-repeat
+				position: 50% 80%
+		.enri-pic
+			background:
+				image: url(../img/enri-mug.jpg)
+				position: 50% 30%
+				size: 120%
+				repeat: no-repeat
+			@media (max-width: 840px)
+				order: 1
+			@media (max-width: 560px)
+				order: -1
+		.toni-pic
+			background:
+				image: url(../img/toni-mug.jpg)
+				size: 110%
+				position: 50% 0%
+				repeat: no-repeat
+
+	.flex.circle-2
+		margin: 0 140px
+
+		@media (max-width: 840px)
+			margin: 0
+
+		.barber-circle
+			margin: 0px 10px 25px
+
+		.sebastjan-pic
+			background:
+				image: url(../img/sebastjan-mug.jpg)
+				size: 110%
+				repeat: no-repeat
+				position: 50% 5%
+		.miri-pic
+			background:
+				image: url(../img/miri-mug.jpg)
+				size: 220%
+				position: 55% 10%
+				repeat: no-repeat
+
+	.flex
+		justify-content: space-around
+		flex-wrap: wrap
+
+		.barber-title
+			text-align: center
+			font-family: 'Special Elite', cursive;
+			margin-top: 20px
+
+		.barber-circle
+			height: 260px
+			width: 260px
+			background: white
+			border-radius: 50%
+			overflow: hidden
+			filter: contrast(75%)
+			box-shadow: 4px 8px 30px black
+			border: 5px solid black
+			margin: 0px 10px 25px
+			font-weight: 400
+
+			&:hover
+
+				.profile-button
+					display: block
+					transform: translateY(0px)	
+
+		.text-box
+			background: rgba(0, 0, 0, 0.4)
+			text-align: center
+			color: white
+			padding-bottom: 20px
+			position: relative
+			top: 200px
+			font-family: 'Sancreek', cursive;
+
+		.profile-button
+			position: relative
+			top: 25px
+			text-align: center
+			color: white
+			background: rgba(046, 139, 087, 0.5)
+			cursor: pointer
+			padding: 15px 0
+			font-size: 20px
+			transform: translateY(-300px)
+			transition: all 400ms ease-in-out
+			border-radius: 5px
+			font-family: 'Special Elite', cursive;
+
+
+
+

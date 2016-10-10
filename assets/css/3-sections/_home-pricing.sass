@@ -1,0 +1,75 @@
+section.pricing
+	background:
+		image: url(../img/home-bg.jpg)
+		position: center 90%
+		size: cover
+		repeat: no-repeat
+	height: 745px
+	
+	.overlay
+		background: rgba(0, 0, 0, .35)
+		margin-top: -25px
+		height: 795px
+
+		.price-row
+			position: relative
+			top: 15px
+			flex-wrap: wrap
+			text-align: center
+
+			.col-1
+				.price-title
+					margin-top: 75px
+					font-family: 'Special Elite', cursive;
+					color: white
+			.col-2
+				background:
+					image: url(../img/lista-e-cmimeve.png)
+					repeat: no-repeat
+					position: 51.3% 15%
+					size: 428px
+
+				@media (max-width: 800px)
+					background: 
+						size: 77%
+						position: 52% 16%
+
+				.ipad
+					position: relative
+					top: 25px
+					filter: drop-shadow(4px 8px 30px black)
+
+					@media (max-width: 800px)
+						top: 20px
+
+				.price
+					border: 3px solid transparent
+					margin: 0px auto 4px
+					width: 70%
+					height: 46px
+					position: relative
+					bottom: 530px
+					left: 3px
+					font:
+						size: 20px
+					text-align: left
+
+					@media (max-width: 800px)
+						bottom: 461px
+						left: auto
+						right: 3px
+						margin-bottom: 2.3%
+						height: 55%
+
+					a
+						border-radius: 5px
+						cursor: pointer
+						padding: 3.1% 43%
+						margin-left: 33px
+						position: relative
+						top: 10px
+
+						&:hover
+							background: rgba(0, 0, 0, .3)
+
+
